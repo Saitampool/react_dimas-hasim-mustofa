@@ -14,4 +14,4 @@ Dalam ilmu FE terdapat beberapa hal penting yaitu
 - Imaginasi
 - Logic (logika dasar)
 
-3. mengetahui langkah - langkah untuk menjadi FE seperti bagaimana internet bekerja, apa itu html,css, dan javascript, mengapa harus menggunakan vcs dan siapa pembuatnya, kapan harus menggunakan framework dan lain sebgainya
+3. mengetahui langkah - langkah untuk menjadi FE seperti bagaimana internet bekerja, apa itu html,css, dan javascript, mengapa harus menggunakan vcs dan siapa pembuatnya, kapan harus menggunakan framework dan lain sebagainya

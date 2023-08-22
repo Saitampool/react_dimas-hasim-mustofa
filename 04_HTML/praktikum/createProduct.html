@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Product</title>
+    <style>
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create Product</h1>
+    <h2>Detail Product</h2>
+    <form action="#">
+      <div>
+        <label for="name">Product Name :</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          minlength="6"
+          maxlength="50"
+          required
+        />
+      </div>
+      <div>
+        <label for="category">Product Category :</label><br />
+        <select id="category" name="category" required>
+          <option value="snack">Snack</option>
+          <option value="minuman">Minuman</option>
+          <option value="kosmetik">Kosmetik</option>
+          <option value="perkakas">Perkakas</option>
+        </select>
+      </div>
+      <div>
+        <label for="freshness">Product Freshness :</label><br />
+        <input type="radio" id="freshness1" name="freshness" value="new" />
+        <label for="freshness1">Brand New</label><br />
+        <input type="radio" id="freshness2" name="freshness" value="hank" />
+        <label for="freshness2">Second Hank</label><br />
+        <input
+          type="radio"
+          id="freshness3"
+          name="freshness"
+          value="refurbished"
+        />
+        <label for="freshness3">Refurbished</label><br />
+      </div>
+      <div>
+        <label for="file"> Image of Product </label>
+        <input type="file" id="file" name="file" required />
+      </div>
+      <div>
+        <label for="deskripsi">Additional Description</label><br />
+        <textarea
+          name="deskripsi"
+          id=""
+          cols="40"
+          rows="10"
+          required
+        ></textarea>
+      </div>
+      <div>
+        <label for="harga">Product Price :</label><br />
+        <input
+          type="number"
+          name="harga"
+          id="harga"
+          placeholder="$ 100"
+          required
+        />
+      </div>
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

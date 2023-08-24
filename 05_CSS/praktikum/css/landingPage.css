@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 3%;
+    border-bottom: 1px solid white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: white;
+}
+
+.navbar .navbar-logo {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: black;
+}
+
+.navbar .navbar-nav a {
+    color: #0D6EFD;
+    display: inline-block;
+    font-size: 1.1rem;
+    margin: 0 0.3rem;
+    padding: 0.3rem 1rem;
+    border-radius: 6px;
+}
+  
+.navbar .navbar-nav a:hover {
+    color: white;
+    background-color: #0D6EFD;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #37517E;
+}
+
+.hero .left-container {
+    position: relative;
+    /* top: 100px; */
+    width: 100%;
+}
+
+.hero .content {
+    padding: 0 7%;
+    text-align: left;
+}
+
+.hero .content h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+.hero .content p {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.content .link-content {
+    margin-top: 2rem;
+    padding: .4rem;
+}
+
+.content .link-content a {
+    color: white;
+    margin-right:4%;
+    padding: 2% 1rem;
+    border-radius: 20px;
+    background-color: #47B2E4;
+}
+
+.content .link-content a:hover {
+    background-color: white;
+    color: #47B2E4;
+}
+
+.hero .right-container {
+    position: relative;
+    width: 100%;
+}
+
+.hero .right-container img {
+    margin-top: 4rem;
+}
+
+/* Join Section */
+.join {
+    text-align: center;
+    background-color: #F3F5FA;
+    padding: 8% 0;
+}
+
+.join h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: #37517E;
+}
+
+.join p {
+    margin-bottom: 1rem;
+    font-size: .7rem;
+}
+
+.join form {
+    margin-top: 2rem;
+}
+
+.join form input[type="text"] {
+    width: 500px;
+    height: 30px;
+    border-radius:20px;
+    background:#FFFFFF;
+    outline:none;
+    border:none;
+}
+
+.join .form-button {
+    margin-left: -7%;
+    height: 30px;
+    width: 90px;
+    border-radius:20px;
+    background-color: #0D6EFD;
+    color: white;
+}
+
+.join .form-button:hover {
+    background-color: #37517E;
+}
+
+/* About Content Section */
+.address, .socials, .services, .about-links {
+    width: 25%;
+}
+
+.about-content {
+    display: flex;
+    padding: 2rem 1.5rem 0.6rem 2rem;
+    align-items: flex-start;
+}
+
+.about-content .address {
+    padding: 0px 5.6rem 1.2rem 0.6rem;
+}
+
+.about-content .address h1 {
+    color: #37517E;
+    font-size: 1rem;
+}
+
+.about-content .address p, .socials p {
+    font-size: 0.7rem;
+}
+
+.about-content .address p span {
+    font-weight: bold;
+}
+
+.about-links, .services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 7rem 1.2rem 0.6rem;
+}
+
+.about-links h1, .services h1, .socials h1 {
+    color: #37517E;
+    font-size: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-links a, .services a {
+    font-size: 0.7rem;
+    color: black;
+    margin-bottom: 0.7rem;
+    padding-right: 2rem;
+    font-weight: 400;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #37517E;
+}
+
+footer p {
+    font-size: 0.7rem;
+    color: white;
+    font-weight: 300;
+}
+
+footer .left p span {
+    font-weight: bold;
+}
+
+footer .right p span {
+    color: #47B2E4;
+}

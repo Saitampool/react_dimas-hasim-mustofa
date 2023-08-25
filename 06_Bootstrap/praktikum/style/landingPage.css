@@ -1,0 +1,29 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 1000px;
+}
+
+.nav-item a {
+    color: #007bff !important;
+    padding: 0.6rem !important;
+}
+
+.nav-item a:hover {
+    color: #fff !important;
+    background-color: #007bff !important;
+}
+
+.container-fluid {
+    background-color: #37517E !important;
+    min-height: 100vh;
+}
+
+.hero-link {
+    background-color: #47B2E4;
+    color: white;
+}
+
+.hero-link:hover {
+    background-color: white !important;
+    color: #47B2E4 !important;
+}

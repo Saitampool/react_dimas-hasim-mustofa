@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 1500px;
+}
+
+.navbar-brand {
+    font-weight: 600 !important;
+}
+
+.navbar-brand span {
+    font-weight: 300 !important;
+}
+
+.nav-item a {
+    color: white !important;
+    padding: 0.6rem !important;
+}
+
+.nav-item a:hover {
+    background-color: #fff !important;
+    color: #007bff !important;
+}
+
+.nav-item .sign-up {
+    background-color: white !important;
+    color: #007bff !important;
+}
+
+.nav-item .sign-up:hover {
+    color: white !important;
+    background-color: #007bff !important;
+}
+
+.dropdown-menu .dropdown-item {
+    margin-bottom: 1px !important;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    color: #007bff !important;
+    background-color: white !important;
+}
+
+.container-fluid {
+    padding-top: 2rem !important;
+    min-height: 100vh;
+}
+
+.btn-doctors {
+    font-size: 10px !important;
+}
+
+body .c-footer {
+    background-color: #F8FBFF !important;
+}
+
+.link-footer {
+    color: black !important;
+    font-size: 12px !important;
+}
+
+.phone {
+    background-color: #4593FF !important;
+}

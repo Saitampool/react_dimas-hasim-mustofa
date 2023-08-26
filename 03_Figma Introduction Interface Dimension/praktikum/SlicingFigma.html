@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slicing Figma</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/slicingFigma.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-primary">
+      <a class="navbar-brand text-white" href="#"
+        ><img src="./img/Logo.png" alt="" /> Health<span>Specialist</span></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto mr-3">
+          <li class="nav-item">
+            <a class="nav-link rounded-sm mr-1" href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-sm mr-1" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-sm mr-1" href="#">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a
+                class="nav-link dropdown-toggle rounded-sm mr-1"
+                type="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                DOCTORS
+              </a>
+              <div class="dropdown-menu">
+                <button
+                  class="dropdown-item text-white bg-primary rounded-sm"
+                  type="button"
+                >
+                  Phillis K Vence MD
+                </button>
+                <button
+                  class="dropdown-item text-white bg-primary rounded-sm"
+                  type="button"
+                >
+                  Stanley K Hudson MD
+                </button>
+                <button
+                  class="dropdown-item text-white bg-primary rounded-sm"
+                  type="button"
+                >
+                  Kevin D Malone MD
+                </button>
+                <button
+                  class="dropdown-item text-white bg-primary rounded-sm"
+                  type="button"
+                >
+                  Angela S Martin MD
+                </button>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link rounded-sm mr-1" href="#">CONTACT</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="" class="nav-link rounded-sm mr-1">LOG IN</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link rounded-sm mr-3 sign-up">SIGN UP</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Hero start -->
+    <div class="container-fluid">
+      <div class="row align-items-center ml-5">
+        <div class="col-6 mt-5">
+          <div class="row">
+            <h1 class="font-weight-bold text-black">
+              Dedicated Health Care Specialist
+            </h1>
+          </div>
+          <div class="row mt-2">
+            <p class="text-black-50 mb-4">
+              Kesehatan adalah keadaan optimal fisik, mental, dan sosial yang
+              penting untuk kualitas hidup yang baik. Pola makan seimbang,
+              olahraga teratur, istirahat cukup, serta hindari stres membantu
+              menjaga kesehatan. <br />Pemeriksaan medis berkala dan vaksinasi
+              juga penting dalam pencegahan penyakit. Jaga kebersihan diri dan
+              lingkungan untuk menghindari infeksi.
+            </p>
+          </div>
+          <div class="row">
+            <a
+              href="#"
+              class="btn btn-primary text-decoration-none p-2 mr-4 rounded-sm"
+              >LEARN MORE</a
+            >
+          </div>
+        </div>
+        <div class="col-6">
+          <img class="mt-5" width="95%" src="./img/ambu.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Hero end -->
+
+    <!-- Card Content start -->
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-4">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title text-center font-weight-bold">
+                Emergencies
+              </h5>
+              <p class="card-text">
+                Kesehatan adalah keadaan optimal fisik, mental, dan sosial yang
+                penting untuk kualitas hidup yang baik. Pola makan seimbang,
+                olahraga teratur, istirahat cukup, serta hindari stres membantu
+                menjaga kesehatan.
+              </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">MORE INFO</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title text-center font-weight-bold">
+                Emergencies
+              </h5>
+              <p class="card-text">
+                Kesehatan adalah keadaan optimal fisik, mental, dan sosial yang
+                penting untuk kualitas hidup yang baik. Pola makan seimbang,
+                olahraga teratur, istirahat cukup, serta hindari stres membantu
+                menjaga kesehatan.
+              </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">MAKE AN APPOINMENT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title text-center font-weight-bold">
+                Emergencies
+              </h5>
+              <p class="card-text">
+                Kesehatan adalah keadaan optimal fisik, mental, dan sosial yang
+                penting untuk kualitas hidup yang baik. Pola makan seimbang,
+                olahraga teratur, istirahat cukup, serta hindari stres membantu
+                menjaga kesehatan.
+              </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">CHECK TEST</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card Content end -->
+
+    <div class="container mt-5 pl-5">
+      <h1>DOCTORS</h1>
+    </div>
+    <!-- Doctor Content start -->
+    <div class="container mt-3">
+      <div class="row">
+        <div class="col-3">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./img/user.png" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Phillis K Vance MD</h5>
+                  <div class="text-center">
+                    <a href="#" class="btn btn-secondary btn-doctors"
+                      >FAMILY MEDICINE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./img/user.png" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Phillis K Vance MD</h5>
+                  <div class="text-center">
+                    <a href="#" class="btn btn-secondary btn-doctors"
+                      >INTERNAL MEDICINE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./img/user.png" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Phillis K Vance MD</h5>
+                  <div class="text-center">
+                    <a href="#" class="btn btn-secondary btn-doctors"
+                      >FAMILY MEDICINE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./img/user.png" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Phillis K Vance MD</h5>
+                  <div class="text-center">
+                    <a href="#" class="btn btn-secondary btn-doctors"
+                      >INTERNAL MEDICINE</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Doctor Content end -->
+
+    <!-- Footer start -->
+    <div class="container c-footer mt-5">
+      <div class="row justify-content-around align-items-center">
+        <div class="col-3">
+          <a class="navbar-brand text-black" href="#"
+            ><img src="./img/Logo.png" alt="" /> Health<span
+              >Specialist</span
+            ></a
+          >
+        </div>
+        <div class="col-3">
+          <div class="row">SERVICES</div>
+          <div class="row">
+            <a href="" class="text-decoration-none link-footer"
+              >Family Medicine</a
+            >
+          </div>
+          <div class="row">
+            <a href="" class="text-decoration-none link-footer"
+              >Internal Medicine</a
+            >
+          </div>
+          <div class="row">
+            <a href="" class="text-decoration-none link-footer">Cardology</a>
+          </div>
+          <div class="row">
+            <a href="" class="text-decoration-none link-footer"
+              >Phisical Therapy</a
+            >
+          </div>
+        </div>
+
+        <div class="col-3">
+          <div class="row">DOCTORS</div>
+          <div class="row">
+            <a href="" class="text-decoration-none link-footer"
+              >Phillis K Vance MD</a
+            >
+          </div>
+          <div class="row">
+            <a href="" class="text-decoration-none link-footer"
+              >Stanley K Hudson MD</a
+            >
+          </div>
+          <div class="row">
+            <a href="" class="text-decoration-none link-footer"
+              >Kevin D Malone MD</a
+            >
+          </div>
+          <div class="row">
+            <a href="" class="text-decoration-none link-footer"
+              >Angela S Martin MD</a
+            >
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">CONTACT</div>
+          <div class="row">
+            <div class="btn btn-primary phone">
+              <img src="./img/cell.svg" alt="" />
+              (404)123-4567
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer end -->
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 1500px;
+}
+
+.nav-item a {
+    color: #007bff !important;
+    padding: 0.6rem !important;
+}
+
+.nav-item a:hover {
+    color: #fff !important;
+    background-color: #007bff !important;
+}
+
+textarea {
+    resize: none;
+}

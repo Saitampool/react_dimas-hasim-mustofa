@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1>Kontak Kami</h1>
+      <div class="container">
+        <form id="contact">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="username">First name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="username"
+                  required
+                />
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="username">Last name:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="username"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="message">What can we help you with?</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("contact").addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        let firstName = document.getElementById("firstName").value;
+        let lastName = document.getElementById("lastName").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+
+        let alertMessage = "Name: " + firstName + " " + lastName + "\n";
+        alertMessage += "Email: " + email + "\n";
+        alertMessage += "Message: " + message;
+
+        alert(alertMessage);
+
+        document.getElementById("contact").reset();
+      });
+    </script>
+  </body>
+</html>

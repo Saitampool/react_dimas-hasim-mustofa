@@ -1,0 +1,17 @@
+#root {
+  width: 100%;
+}
+
+.nav-item a {
+  color: #007bff !important;
+  padding: 0.6rem !important;
+}
+
+.nav-item a:hover {
+  color: #fff !important;
+  background-color: #007bff !important;
+}
+
+textarea {
+  resize: none;
+}

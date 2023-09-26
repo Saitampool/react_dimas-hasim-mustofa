@@ -1,0 +1,1 @@
+Mengubah project yang telah dibuat pada code competance 1 ke dalam react. Website yang telah kalian buat menggunakan cara one page website. Sehingga tidak perlu menerapkan routing. Kalian juga diharuskan menerapkan teknologi dan library yang telah dipelajari.

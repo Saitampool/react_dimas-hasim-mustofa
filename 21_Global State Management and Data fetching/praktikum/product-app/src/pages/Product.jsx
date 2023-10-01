@@ -30,6 +30,22 @@ const Product = () => {
       harga: false,
     });
 
+    const handleImageUpload = (e) => {
+      const file = e.target.files[0];
+      const reader = new FileReader();
+  
+      reader.onload = () => {
+        setDataProduk({
+          ...dataProduk,
+          gambar: reader.result,
+        });
+      };
+  
+      if (file) {
+        reader.readAsDataURL(file);
+      }
+    };
+
     const handleSubmit = (e) => {
         e.preventDefault();
         if ( dataProduk.nama.length >= 6 && 
@@ -37,6 +53,7 @@ const Product = () => {
             dataProduk.deskripsi !== "" && 
             dataProduk.harga !== ""
             ) {
+                const reader = new FileReader();
                 const newProduk =  {
                   id: Date.now(),
                   nama: dataProduk.nama,
@@ -56,6 +73,7 @@ const Product = () => {
                 harga: "",
                 gambar: null,
               });
+              reader.readAsDataURL(dataProduk.gambar);
         } else {
           setErrors({
             nama: true,
@@ -71,14 +89,6 @@ const Product = () => {
         setDataProduk({
           ...dataProduk,
           [name]: value,
-        });
-      };
-
-      const handleFileChange = (e) => {
-        const file = e.target.files[0];
-        setDataProduk({
-          ...dataProduk,
-          dataProduk: file,
         });
       };
 
@@ -143,7 +153,7 @@ const Product = () => {
                   className="w-full rounded border-2 px-4 py-2 outline-none focus:border-blue-500"
                   name='gambar'   
                   id="gambar"
-                  onChange={handleFileChange} // setGambar(URL.createObjectURL(e.target.files[0]))
+                  onChange={handleImageUpload}
               />
               </div>
               <fieldset>
@@ -244,6 +254,7 @@ const Product = () => {
                 <th className='border-2 px-2'>Quality</th>
                 <th className='border-2 px-2'>Description</th>
                 <th className='border-2 px-2'>Price</th>
+                <th className="border-2 px-2">Image</th>
                 <th className='border-2 px-2'>Detail</th>
                 <th className='border-2 px-2'>Action</th>
             </tr>
@@ -257,6 +268,9 @@ const Product = () => {
                       <td className='border-2 px-2 py-2'>{product.kualitas}</td>
                       <td className='border-2 px-2 py-2'>{product.deskripsi}</td>
                       <td className='border-2 px-2 py-2'>{product.harga}</td>
+                      <td className="border-2 px-2 py-2">
+                        <img src={product.gambar} alt="Produk" style={{ maxWidth: "100px", height: "auto" }} />
+                      </td>
                       <td className='border-2 px-2 py-2'>
                         <button
                         className="mx-auto my-2 bg-amber-500 block text-white px-4 py-2 rounded hover:bg-amber-600 transition duration-300"

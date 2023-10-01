@@ -32,6 +32,9 @@ function DetailProduct() {
           <p>
             <strong>Product Price:</strong> {selectedProduct.harga}
           </p>
+          <div >
+          <img className='mx-auto mt-2' src={selectedProduct.gambar} alt="Product Image" style={{ width: "300px", height: "auto" }} />
+          </div>
         <button onClick={handleClick} type='button' className='mt-5 cursor-pointer rounded bg-green-500 px-4 py-2 text-white hover:bg-green-600 transition duration-300'>
           Back
         </button>

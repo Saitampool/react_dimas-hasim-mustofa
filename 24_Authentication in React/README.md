@@ -1,0 +1,3 @@
+- Authorization dalam konteks aplikasi React adalah proses mengontrol akses pengguna terhadap bagian-bagian tertentu dari aplikasi berdasarkan peran (roles) atau izin yang mereka miliki.
+- Ini berarti bahwa tidak semua pengguna memiliki akses ke semua bagian aplikasi, dan perlu mengimplementasikan sistem yang memungkinkan pengguna hanya mengakses apa yang sesuai dengan peran atau izin orang lain.
+- proses yang memungkinkan pengguna untuk memasuki akun mereka dengan mengidentifikasi pengguna. Ini biasanya melibatkan memasukkan informasi kredensial, seperti nama pengguna dan kata sandi, dan memverifikasinya melalui server atau sistem autentikasi.

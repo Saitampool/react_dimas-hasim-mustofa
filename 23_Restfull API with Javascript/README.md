@@ -1,0 +1,7 @@
+- 7 mock API yg populer adalah Beeceptor, Mockon, Mocki, Stoplight, Postman Mock Server, Mocky, dan MockAPI
+- Untuk menggunakan mock api dmulai dengan login, baik dengan google maupun akun lainnya.
+- membuat nama project sesuai kebutuhan, kemudian klik tombol create
+- membuat Resource, dengan mengisi field Resource dan klik tombol create
+- untuk mock api ini bisa auto menggenerate dummy data sesuai dengan tipe data, dan banyak data sesuai hati
+- untuk mengakses mock api ini dengan menggunakan endpoind mock api yg sudah disediakan
+- untuk mock api ini memiliki beberapa method yaitu get, post, put dan delete yang dapat diatur untuk tersedianya method ini atau tidak.
